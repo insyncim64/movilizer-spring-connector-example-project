@@ -20,6 +20,6 @@ There for in the following listing you can change MasterDataSendingConfiguration
 
     @SpringBootApplication
     @Import(MasterDataSendingConfiguration.class)
-    public class Application extends SpringBootServletInitializer implements WebApplicationInitializer {
+    public class Application {
       private static Log logger = LogFactory.getLog(Application.class);
 
