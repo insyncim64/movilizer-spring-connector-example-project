@@ -4,12 +4,9 @@ package com.movilizer.connector.example;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.Banner.Mode;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.context.web.SpringBootServletInitializer;
 import org.springframework.context.annotation.Import;
-import org.springframework.web.WebApplicationInitializer;
-
-import com.movilizer.connector.example.dc.DatacontainerProcessorConfiguration;
 import com.movilizer.connector.example.md.MasterDataSendingConfiguration;
 
 /**
@@ -19,7 +16,7 @@ import com.movilizer.connector.example.md.MasterDataSendingConfiguration;
  */
 @SpringBootApplication
 @Import(MasterDataSendingConfiguration.class)
-public class Application extends SpringBootServletInitializer implements WebApplicationInitializer {
+public class Application {
 
 	private static Log logger = LogFactory.getLog(Application.class);
 
@@ -49,7 +46,7 @@ public class Application extends SpringBootServletInitializer implements WebAppl
 		 */
 
 		SpringApplication app = new SpringApplication(Application.class);
-		app.setShowBanner(false);// app.setBannerMode(Banner.Mode.OFF);
+		app.setBannerMode(Mode.OFF);
 		app.run(args);
 	}
 }

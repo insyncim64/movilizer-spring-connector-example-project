@@ -33,7 +33,7 @@ buildscript {
 		mavenCentral()
 	}
 	dependencies {
-		classpath("org.springframework.boot:spring-boot-gradle-plugin:1.2.8.RELEASE")
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.8.RELEASE")
 	}
 }
 
@@ -47,4 +47,8 @@ repositories {
 
 dependencies {
 	compile project(":movilizer-spring-connector")
+}
+
+task wrapper(type: Wrapper) {
+	gradleVersion = '4.3'
 }

@@ -1,7 +1,7 @@
 package com.movilizer.connector.example.requestprint;
 
 
-import com.movilitas.movilizer.v14.MovilizerResponse;
+import com.movilitas.movilizer.v15.MovilizerResponse;
 import com.movilizer.connector.MovilizerConnectorAPI;
 import com.movilizer.connector.example.ExcludeExamplesConfiguration;
 import com.movilizer.connector.model.Processor;

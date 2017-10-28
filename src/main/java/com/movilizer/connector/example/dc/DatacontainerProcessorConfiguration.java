@@ -1,7 +1,7 @@
 package com.movilizer.connector.example.dc;
 
 
-import com.movilitas.movilizer.v14.MovilizerUploadDataContainer;
+import com.movilitas.movilizer.v15.MovilizerUploadDataContainer;
 import com.movilizer.connector.MovilizerConnectorAPI;
 import com.movilizer.connector.example.ExcludeExamplesConfiguration;
 import com.movilizer.connector.mapper.direct.GenericDataContainerMapperImpl;
@@ -9,8 +9,6 @@ import com.movilizer.connector.model.MovilizerCallback;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.DependsOn;
 import org.springframework.context.annotation.Import;

@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 import org.springframework.stereotype.Component;
 
-import com.movilitas.movilizer.v14.MovilizerMasterdataPoolUpdate;
+import com.movilitas.movilizer.v15.MovilizerMasterdataPoolUpdate;
 import com.movilizer.connector.MovilizerConnectorAPI;
 import com.movilizer.connector.annotations.masterdata.MafAppSpace;
 import com.movilizer.connector.annotations.masterdata.MasterdataDescription;
